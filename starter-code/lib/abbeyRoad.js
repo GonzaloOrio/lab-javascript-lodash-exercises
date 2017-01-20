@@ -225,7 +225,7 @@ var abbeyRoadRecords = [{song: "Land of Hope and Glory",
                       year: 1966},
                       {song: "Thunderbirds Are Go",
                       artist: "The Shadows with Cliff Richard",
-                      year: 1966},,
+                      year: 1966},
                       {song: "For Certain Because",
                       artist: "The Hollies",
                       year: 1967},
@@ -911,3 +911,20 @@ var abbeyRoadRecords = [{song: "Land of Hope and Glory",
                       {song: "Love Divine III",
                       artist: "Jan Mulder with The Royal Philharmonic Orchestra",
                       year: 2016}];
+
+
+
+//Remember to execute the function to actually assing the value to the var.
+
+
+var novemberArtists = function (array){
+  var mostNovember = [];
+  for (i=0;i<array.length;i++){
+    if (array[i].month === 11){
+        mostNovember.push(array[i].artist);
+    }
+  }
+
+  return mostNovember;
+};
+console.log(novemberArtists(abbeyRoadRecords));

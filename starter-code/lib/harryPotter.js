@@ -8,3 +8,18 @@
                    "4 October", "Filius Flitwick", "17 October", "Molly Weasley",
                    "30 October", "Bill Weasley", "29 November", "Rubeus Hagrid",
                    "6 December", "Charlie Weasley", "12 December"];
+
+var moreBirthdays = ["Lily Evans", "30 January", "James Potter", "27 March",
+                     "Dudley Dursley", "30 June", "Tom Riddle", "31 December"];
+
+var listCharacters = elementsSplitArray(birthdays,2);
+var newBirthdays = elementsSplitArray(moreBirthdays,2);
+var finalListCharacters = _.concat(listCharacters,newBirthdays);
+
+function elementsSplitArray(items,num){
+  return _.chunk(items,num);
+}
+console.log("///Harry Potter Exercise///");
+console.log(listCharacters);
+console.log(newBirthdays);
+console.log(finalListCharacters);
