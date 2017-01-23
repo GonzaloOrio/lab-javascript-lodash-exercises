@@ -916,6 +916,11 @@ var abbeyRoadRecords = [{song: "Land of Hope and Glory",
 
 //Remember to execute the function to actually assing the value to the var.
 
+// var abbeyRoadRecords = [{song: "Land of Hope and Glory",
+//                       artist: "Sir Edward Elgar",
+//                       month: 11,
+//                       year: 1931},];
+
 
 var novemberArtists = function (array){
   var mostNovember = [];
@@ -924,7 +929,17 @@ var novemberArtists = function (array){
         mostNovember.push(array[i].artist);
     }
   }
-
+  console.log(mostNovember);
   return mostNovember;
 };
-console.log(novemberArtists(abbeyRoadRecords));
+
+function analiceArray(array){
+  var bestArtist = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+
+_.differenceWith(array, [{ 'x': 1, 'y': 2 }], _.isEqual);
+// => [{ 'x': 2, 'y': 1 }]
+  novemberArtists(array).slice(2);
+  console.log(novemberArtists(array));
+}
+
+analiceArray(abbeyRoadRecords);
